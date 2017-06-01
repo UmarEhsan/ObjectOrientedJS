@@ -5,7 +5,7 @@ let Parent =
     draw:  ()=> "I am a parent"
     
 };
-//Child Object inherit all properties and methods from shape
+//Child Object inherit all properties and methods from Parent
 let firstChild = Object.create(Parent,{
     draw :
      {
@@ -13,7 +13,7 @@ let firstChild = Object.create(Parent,{
      }
  });
 
-//Child Object inherit all properties and methods from shape
+//Child Object inherit all properties and methods from Parent
 let secondChild = Object.create(Parent,{
     draw : 
     {
